@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# Secrets and local data - never commit
+.env
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+# Node
+node_modules/
+dist/
+# Editors / OS
+.DS_Store
+Thumbs.db

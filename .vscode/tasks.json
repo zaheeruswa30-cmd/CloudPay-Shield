@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup (first time)",
+      "type": "process",
+      "command": "powershell.exe",
+      "problemMatcher": [],
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\setup.ps1"
+      ]
+    },
+    {
+      "label": "Backend: Run",
+      "type": "process",
+      "command": "powershell.exe",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "dedicated"
+      },
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\start-backend.ps1"
+      ]
+    },
+    {
+      "label": "Frontend: Run",
+      "type": "process",
+      "command": "powershell.exe",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "dedicated"
+      },
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\start-frontend.ps1"
+      ]
+    },
+    {
+      "label": "Run both (backend + frontend)",
+      "dependsOn": [
+        "Backend: Run",
+        "Frontend: Run"
+      ],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    },
+    {
+      "label": "Tests",
+      "type": "process",
+      "command": "powershell.exe",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\run-tests.ps1"
+      ]
+    }
+  ]
+}

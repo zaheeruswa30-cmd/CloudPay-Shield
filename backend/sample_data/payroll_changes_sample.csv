@@ -1,0 +1,9 @@
+employee_code,full_name,department,current_salary,proposed_salary,effective_date,reason
+EMP-001,Ayesha Khan,Engineering,250000,270000,2026-11-01,Annual merit increase after 2026 performance review rated exceeds expectations
+EMP-004,Bilal Hussain,Engineering,320000,520000,2026-11-01,increase
+EMP-005,Fatima Noor,Engineering,190000,abc,2026-11-01,Promotion to Senior QA Engineer approved by engineering director
+EMP-006,Usman Tariq,Finance,140000,150500,2026-13-01,Cost of living adjustment as per finance circular FC-2026-04
+EMP-006,Usman Tariq,Finance,140000,151000,2026-11-01,Duplicate line entered by mistake in the spreadsheet export
+EMP-099,Unknown Person,Finance,100000,110000,2026-11-01,Employee code does not exist in the payroll system
+EMP-007,Zainab Raza,Operations,200000,226800,2026-11-01,Promotion to Senior Operations Lead with expanded regional scope
+EMP-010,Omar Farooq,Engineering,280000,,2026-11-01,Market adjustment pending compensation committee figures
